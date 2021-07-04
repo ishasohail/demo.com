@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+body {
+    font-size: 1.25em;
+    line-height: 2rem;
+    background-color: #eee;
+    color: #400;
+    font-family: 'Mukta', sans-serif;
+}
+
+section {
+    padding: 2vh 0;
+}
+
+section:nth-child(even) {
+    background-color: #eee;
+}
+
+section:nth-child(even) {
+    background-color: rgb(226, 228, 218);
+}
+
+header {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 10, 0.66);
+    background-image: url(../images/laptop.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+header h1 {
+    font-weight: 200;
+    font-size: clamp(3rem, 5.5vw, 8rem);
+    color: gold;
+}
+
+header p {
+    color: rgb(169, 228, 102);
+    padding: 0 10px;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.navbar-light .navbar-brand {
+    color: rgba(25, 16, 105, 0.9);
+    font-weight: 600;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: crimson;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(18, 8, 71, 0.877);
+}
+
+main {
+    min-height: 63vh;
+}
+.container h1{
+    color: blue;
+}
+.container h2{
+    color: crimson;
+}
+
+.about h1 {
+    font-size: clamp(1.8rem, 2.1vw, 3rem);
+    color: rgb(20, 2, 124);
+}
+
+.about h1::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 1.2rem;
+    content: "\f058";
+    margin-right: 1rem;
+}
+
+.about ul {
+    margin-left: 0.5rem;
+    border-left: 0.1rem dotted darkorange;
+}
+
+.about li {
+    list-style-type: none;
+}
+
+.about li::before {
+    margin-right: 0.5rem;
+    content: '✦';
+    width: 1rem;
+    margin-left: -1.5rem;
+    color: #ccc;
+}
+
+footer {
+    min-height: 7vh;
+    background: linear-gradient(#eee 0%, #eee 60%, #ccc);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 1rem;
+}
+
+.profile {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+
+.icons {
+    color: crimson;
+    padding-right: 5px;
+}
+
+.profile h1 {
+    font-size: 1.8rem;
+    color: navy;
+    font-weight: bold;
+}
+
+img.circle {
+    border: 10px solid rgba(41, 29, 54, 0.157);
+    border-radius: 50%;
+}
+
+.debug {
+    border: 1px dotted red;
+}
+
+
+/* For Mobiles */
+
+@media only screen and (max-width: 768px) {
+    .no-show-mob {
+        display: none;
+    }
+    .profile {
+        text-align: center;
+    }
+    img.circle {
+        transform: scale(0.7);
+    }
+    .non-mobile-only {
+        display: none;
+    }
+}
+
+
+/* For Desktop */
+
+@media only screen and (min-width: 768px) {
+    .profile p {
+        text-indent: 35px;
+    }
+    .mob-show-only {
+        display: none;
+    }
+}
